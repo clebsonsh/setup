@@ -119,13 +119,3 @@
 > `valet link`
 
 > `valet open`
-
-## Baixe o VSCode e o Dbeaver
-
-[vscode](https://code.visualstudio.com/docs/?dv=linux64_deb)
-
-[dbeaver](https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb)
-
-## Extensões do VSCode
-
-<img src="https://raw.githubusercontent.com/clebsonsh/setup/main/extension.png">
