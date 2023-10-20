@@ -118,4 +118,4 @@
 
 > `valet link`
 
-> `valet openl`
+> `valet open`
