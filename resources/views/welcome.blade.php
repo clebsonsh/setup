@@ -861,7 +861,7 @@
                 </svg>
             </div>
 
-            <iframe width="560" height="315"
+            <iframe width="100%" height="600" class="mt-6"
                 src="https://www.youtube.com/embed/skVg5FlVKS0?si=mT45aaXn-4ItIAl0?autoplay=1"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
