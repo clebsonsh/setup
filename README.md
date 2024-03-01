@@ -1,8 +1,18 @@
 <p align="center"><img src="https://raw.githubusercontent.com/clebsonsh/setup/main/exata_logo.svg" width="200"></p>
 
-# Exata IT - Setup Ubuntu Laravel
+# Exata IT - Setup WSL Laravel
 
 # Pre-setup
+
+## Instalar WSL
+
+Abra o Terminal como administrado e instale o WSL no windows
+
+> `wsl --install`
+
+Quando esse comando terminar de rodar você terá o Ubuntu rodando dentro do Windows
+
+Abra o terminal do ubuntu para instalar as seguites dependências
 
 > `sudo add-apt-repository universe`
 
@@ -22,7 +32,9 @@
 
 ## Composer
 
-> `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/ && sudo ln -s /usr/local/bin/composer.phar /usr/local/bin/composer`
+> `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/`
+
+> `sudo ln -s /usr/local/bin/composer.phar /usr/local/bin/composer`
 
 ## Valet
 
@@ -33,6 +45,18 @@
 > `source ~/.bashrc`
 
 > `valet install`
+
+> `sudo unlink /etc/resolv.conf`
+
+> `sudo cp /opt/valet-linux/valet-dns /etc/resolv.conf`
+
+> `sudo echo '[network]' >> /etc/wsl.conf; sudo echo 'generateResolvConf=false' >> /etc/wsl.conf`
+
+> `sudo echo 'nameserver 1.1.1.1 > /opt/valet-linux/dns-servers'`
+
+> `sudo echo 'nameserver 8.8.8.8 >> /opt/valet-linux/dns-servers'`
+
+> `valet domain localhost`
 
 ## MySQL/MariaDB
 
@@ -118,4 +142,4 @@
 
 > `valet link`
 
-> `valet open`
+abra o navegodor e digite [http://setup.localhost](http://setup.localhost)
